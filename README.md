@@ -47,6 +47,13 @@ Right-click the icon → **Options** (or `chrome://extensions` → *Details* →
 | `options.html` / `options.js` | Settings page |
 | `icons/` | Toolbar icons (rendered from `icon.svg`) |
 
+## Disclaimer
+
+This tool is intended for accessing archives of content you're entitled to
+view. It doesn't host, copy, or store any content itself — it simply opens an
+[archive.today](https://archive.today) snapshot URL. Please respect publishers'
+terms of service and applicable copyright law.
+
 ## License
 
 MIT
