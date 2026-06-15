@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Archive Viewer",
   "version": "1.0.0",
-  "description": "One click jumps to the most recent archive.today snapshot of the current page — handy for paywalls.",
+  "description": "View the most recent archive.today snapshot of the current page in one click.",
   "permissions": ["activeTab", "contextMenus", "storage"],
   "background": {
     "service_worker": "background.js"

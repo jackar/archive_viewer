@@ -2,7 +2,8 @@
 
 A tiny Chrome extension: click the toolbar icon and you're taken to the **most
 recent [archive.today](https://archive.today) snapshot** of the page you're on.
-Great for slipping past paywalls and reading dead links.
+Handy for reading archived versions of pages and recovering dead or changed
+links.
 
 ## How it works
 
