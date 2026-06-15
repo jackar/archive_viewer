@@ -24,9 +24,24 @@ function isArchivable(url) {
   return /^https?:\/\//i.test(url || "");
 }
 
+// Strip the query string (and hash) so tracking params like ?utm_source=...
+// don't fragment archive lookups — archive.today keys snapshots by exact URL,
+// and the canonical, param-free URL is far more likely to have a snapshot.
+function stripQuery(pageUrl) {
+  try {
+    const u = new URL(pageUrl);
+    u.search = "";
+    u.hash = "";
+    return u.toString();
+  } catch {
+    // Not a parseable URL — fall back to a plain split.
+    return pageUrl.split(/[?#]/)[0];
+  }
+}
+
 function buildNewestUrl(base, pageUrl) {
   // archive.today wants the target URL appended raw after /newest/.
-  return `${base.replace(/\/+$/, "")}/newest/${pageUrl}`;
+  return `${base.replace(/\/+$/, "")}/newest/${stripQuery(pageUrl)}`;
 }
 
 async function openArchive(tab) {
