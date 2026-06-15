@@ -35,9 +35,9 @@ key, no account, no tracking.
 Right-click the icon → **Options** (or `chrome://extensions` → *Details* →
 *Extension options*):
 
-- **Archive mirror** — switch between interchangeable mirrors (`archive.ph`,
+- **Archive mirror**: switch between interchangeable mirrors (`archive.ph`,
   `archive.today`, `archive.is`, …) if one is blocked or slow.
-- **Open snapshot in** — a new tab (default) or the current tab.
+- **Open snapshot in**: a new tab (default) or the current tab.
 
 ## Files
 
@@ -51,7 +51,7 @@ Right-click the icon → **Options** (or `chrome://extensions` → *Details* →
 ## Disclaimer
 
 This tool is intended for accessing archives of content you're entitled to
-view. It doesn't host, copy, or store any content itself — it simply opens an
+view. It doesn't host, copy, or store any content itself; it simply opens an
 [archive.today](https://archive.today) snapshot URL. Please respect publishers'
 terms of service and applicable copyright law.
 

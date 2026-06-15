@@ -1,9 +1,9 @@
-// Archive Viewer — jump to the most recent archive.today snapshot of the current page.
+// Archive Viewer: jump to the most recent archive.today snapshot of the current page.
 //
 // archive.today exposes a "newest" endpoint that 302-redirects to the latest
 // snapshot of a given URL (or offers to create one if none exists):
 //   https://archive.ph/newest/https://example.com/article
-// That single URL is all we need — no API key, no scraping.
+// That single URL is all we need: no API key, no scraping.
 
 const DEFAULTS = {
   // archive.today has several interchangeable mirror domains. .ph tends to be
@@ -25,7 +25,7 @@ function isArchivable(url) {
 }
 
 // Strip the query string (and hash) so tracking params like ?utm_source=...
-// don't fragment archive lookups — archive.today keys snapshots by exact URL,
+// don't fragment archive lookups; archive.today keys snapshots by exact URL,
 // and the canonical, param-free URL is far more likely to have a snapshot.
 function stripQuery(pageUrl) {
   try {
@@ -34,7 +34,7 @@ function stripQuery(pageUrl) {
     u.hash = "";
     return u.toString();
   } catch {
-    // Not a parseable URL — fall back to a plain split.
+    // Not a parseable URL, fall back to a plain split.
     return pageUrl.split(/[?#]/)[0];
   }
 }

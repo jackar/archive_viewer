@@ -1,4 +1,4 @@
-# Privacy Policy — Archive Viewer
+# Privacy Policy for Archive Viewer
 
 _Last updated: 2026-06-15_
 
@@ -16,7 +16,7 @@ Archive Viewer does **not** collect, store, transmit, or sell any personal
 information. Specifically:
 
 - It has no analytics, telemetry, or tracking of any kind.
-- It does not send data to any server operated by the developer — there is no
+- It does not send data to any server operated by the developer; there is no
   backend.
 - It does not store your browsing history. The current tab's URL is used only
   at the moment you click the extension, solely to build the archive link, and
@@ -42,10 +42,10 @@ the developer.
 
 ## Permissions
 
-- **activeTab** — read the current tab's URL, only when you invoke the
+- **activeTab**: read the current tab's URL, only when you invoke the
   extension, to build the archive link.
-- **contextMenus** — add a right-click menu item to trigger the same action.
-- **storage** — save your mirror and open-in-tab preferences locally.
+- **contextMenus**: add a right-click menu item to trigger the same action.
+- **storage**: save your mirror and open-in-tab preferences locally.
 
 ## Changes
 
