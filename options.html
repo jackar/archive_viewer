@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Archive Viewer — Options</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        max-width: 420px;
+        margin: 32px auto;
+        padding: 0 20px;
+      }
+      h1 { font-size: 18px; margin: 0 0 4px; }
+      p.sub { margin: 0 0 24px; opacity: 0.7; }
+      label { display: block; font-weight: 600; margin: 18px 0 6px; }
+      select, input { width: 100%; padding: 8px; box-sizing: border-box; font-size: 14px; }
+      .hint { font-size: 12px; opacity: 0.7; margin-top: 4px; }
+      button { margin-top: 24px; padding: 8px 18px; font-size: 14px; cursor: pointer; }
+      #status { margin-left: 12px; color: #2e7d32; opacity: 0; transition: opacity 0.2s; }
+      #status.show { opacity: 1; }
+    </style>
+  </head>
+  <body>
+    <h1>Archive Viewer</h1>
+    <p class="sub">Click the toolbar icon to jump to the newest archive.today snapshot of the current page.</p>
+
+    <label for="base">Archive mirror</label>
+    <select id="base">
+      <option value="https://archive.ph">archive.ph</option>
+      <option value="https://archive.today">archive.today</option>
+      <option value="https://archive.is">archive.is</option>
+      <option value="https://archive.li">archive.li</option>
+      <option value="https://archive.md">archive.md</option>
+    </select>
+    <div class="hint">These are interchangeable mirrors of the same archive. Switch if one is blocked or slow.</div>
+
+    <label for="openIn">Open snapshot in</label>
+    <select id="openIn">
+      <option value="newtab">A new tab (keep the original open)</option>
+      <option value="sametab">The current tab</option>
+    </select>
+
+    <div>
+      <button id="save">Save</button>
+      <span id="status">Saved</span>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

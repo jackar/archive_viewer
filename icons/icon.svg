@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="26" fill="#1f6feb"/>
+  <!-- archive box lid -->
+  <rect x="28" y="34" width="72" height="20" rx="4" fill="#ffffff"/>
+  <!-- archive box body -->
+  <rect x="33" y="54" width="62" height="44" rx="4" fill="#ffffff"/>
+  <!-- box label slot -->
+  <rect x="52" y="66" width="24" height="9" rx="4.5" fill="#1f6feb"/>
+</svg>
